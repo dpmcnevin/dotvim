@@ -1,0 +1,21 @@
+set hidden
+
+color twilight
+set guifont=Monaco:h13
+let g:NERDTreeWinPos = "right"
+
+" Set cmd-w to delete the buffer rahter than close the window
+" macmenu &File.Close key=<nop>
+macmenu &File.Close key=<D-W>
+nmap <D-w> :bd<CR>
+imap <D-w> <Esc>:bd<CR>
+
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,client/*,client_daemon/*,updater/*,ios/*,windows/*
+
+" let g:CommandTAcceptSelectionMap = '<C-t>'
+" let g:CommandTAcceptSelectionTabMap = '<CR>'
+
+" delimimate
+let delimitMate_matchpairs = "(:),[:],{:},<:>"
+"au FileType html let b:delimitMate_matchpairs = "(:),[:],{:},<:>"
+"au FileType ruby let b:delimitMate_matchpairs = "(:),[:],{:},<:>,\|:\|"
