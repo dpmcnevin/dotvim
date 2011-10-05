@@ -9,7 +9,7 @@ added a few more of use to me.
 ## Installation
 
     git clone git://github.com/dpmcnevin/dotvim.git ~/.vim
-    (cd .vim && mkdir backup && git submodule update)
+    (cd .vim && mkdir -p backup && git submodule init && git submodule update)
 
 ## Updating to the latest version of plugins
 
