@@ -1,80 +1,19 @@
-# Janus: Carlhuda's vim Distribution
+# DotVim
 
-This is a basic distribution of vim plugins and tools intended to be run
-on top of the latest MacVIM snapshot.
+These are my .vim customization, copied wholesale from
+[Janus](http://github.com/carlhuda/janus) and then switched all the
+plugins over to [pathogen](http://github.com/tpope/vim-pathogen) and
+added a few more of use to me.
 
-We (Carl and Yehuda) both use this distribution for our own use, and
-welcome patches and contributions to help make it an effective way to
-get started with vim and then use it productively for years to come.
-
-At present, we are still learning to use vim ourselves, so you should
-anticipate a period of rapid development while we get a handle on the
-best tools for the job. So far, we have mostly integrated existing
-plugins and tools, and we anticipate to continue doing so while also
-writing our own plugins as appropriate.
-
-In general, you can expect that the tools we use work well together and
-that we have given careful thought to the experience of using MacVIM
-with the tools in question. If you run into an issue using it, please
-report an issue to the issue tracker.
-
-## Pre-requisites
-
-Janus is built primarily for [MacVim](http://code.google.com/p/macvim/) on OSX.
-Download it [here](https://github.com/b4winckler/macvim/downloads).
-
-Alternatively, you can use Janus with the bundled console `vim` installation on
-OSX (via Terminal), or with any other `vim` or `gvim` installation.
-
-Linux users can install `gvim` for an experience identical to MacVim.
-On Debian/Ubuntu, simply `apt-get install vim-gnome`. For remote
-servers, install console vim with `apt-get install vim-nox`.
-
-On a fresh Ubuntu install you also have to install the packages `rake` and `ruby-dev`
-before running the install script and `exuberant-ctags` for ctags
-support.
 
 ## Installation
 
-0. `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old;
-   done`
-1. `git clone git://github.com/carlhuda/janus.git ~/.vim`
-2. `cd ~/.vim`
-3. `rake`
+    git clone https://dpmcnevin@github.com/dpmcnevin/dotvim.git ~/.vim
+    (cd .vim && mkdir backup && git submodule update)
 
-or
+## Updating to the latest version of plugins
 
-  `curl https://raw.github.com/carlhuda/janus/master/bootstrap.sh -o - | sh`
-
-## Customization
-
-Create `~/.vimrc.local` and `~/.gvimrc.local` for any local
-customizations.
-
-For example, to override the default color schemes:
-
-    echo color desert  > ~/.vimrc.local
-    echo color molokai > ~/.gvimrc.local
-
-If you want to add additional Vim plugins you can do so by adding a
-`~/.janus.rake` like so:
-
-    vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
-    vim_plugin_task "minibufexpl", "git://github.com/fholgado/minibufexpl.vim.git"
-
-If you do not wish to use one of the plugins Janus provides out of the
-box you can have it skipped using the `skip_vim_plugin` method in
-`~/.janus.rake`:
-
-    skip_vim_plugin "color-sampler"
-
-**Note**: Skipping the plugin will only apply to installation. It won't
-remove configurations or mappings Janus might have added for it.
-
-## Updating to the latest version
-
-To update to the latest version of the distribution, just run `rake`
-again inside your `~/.vim` directory.
+    (cd .vim && git submodule foreach git pull)
 
 # Intro to VIM
 
@@ -263,41 +202,4 @@ When working with split windows, ZoomWin lets you zoom into a window and
 out again using `Ctrl-W o`
 
 **Customizations**: Janus binds `<Leader><Leader>` to `:ZoomWin`
-
-## Additional Syntaxes
-
-Janus ships with a few additional syntaxes:
-
-* Markdown (bound to \*.markdown, \*.md, and \*.mk)
-* Mustache (bound to \*.mustache)
-* Arduino  (bound to \*.pde)
-* Haml (bound to \*.haml)
-* Sass (bound to \*.sass)
-* SCSS (bound to \*.scss)
-* An improved JavaScript syntax (bound to \*.js)
-* Map Gemfile, Rakefile, Vagrantfile and Thorfile to Ruby
-* Git commits (set your `EDITOR` to `mvim -f`)
-
-## Color schemes
-
-Janus includes the vim color sampler pack, which includes [over 100
-popular color themes](http://www.vi-improved.org/color_sampler_pack/):
-
-* jellybeans
-* matrix
-* railscasts2
-* tango
-* vibrantink
-* vividchalk
-* wombat
-* xoria256
-
-Use `:color vibrantink` to switch to a color scheme.
-
-Janus also has a few customized versions of popular themes:
-
-* jellybeans+
-* molokai
-* railscasts+
-* vwilight
 
