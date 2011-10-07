@@ -10,7 +10,7 @@ macmenu &File.Close key=<D-W>
 nmap <D-w> :bd<CR>
 imap <D-w> <Esc>:bd<CR>
 
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,client/*,client_daemon/*,updater/*,ios/*,windows/*
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,mam/client/*,mam/client_daemon/*,mam/updater/*,mam/ios/*,mam/windows/*
 
 " let g:CommandTAcceptSelectionMap = '<C-t>'
 " let g:CommandTAcceptSelectionTabMap = '<CR>'
@@ -19,3 +19,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,client/*,client_
 let delimitMate_matchpairs = "(:),[:],{:},<:>"
 "au FileType html let b:delimitMate_matchpairs = "(:),[:],{:},<:>"
 "au FileType ruby let b:delimitMate_matchpairs = "(:),[:],{:},<:>,\|:\|"
+
+" Map Leader-C to copy the current file to the clipboard
+map <Leader>C :!cat % \| pbcopy<CR>
