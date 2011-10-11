@@ -11,7 +11,7 @@ if has("gui_macvim")
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
   " Command-Shift-F for Ack
-  map <D-F> :Ack<space>
+  map <D-F> :Ack --follow<space>
 
   " Command-e for ConqueTerm
   map <D-e> :call StartTerm()<CR>
