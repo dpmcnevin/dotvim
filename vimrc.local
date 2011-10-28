@@ -3,3 +3,5 @@ call pathogen#helptags()
 
 color twilight
 
+map <Leader>d :EC<CR>
+map <Leader>D :DC<CR>

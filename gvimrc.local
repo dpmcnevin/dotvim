@@ -10,7 +10,7 @@ macmenu &File.Close key=<D-W>
 nmap <D-w> :bd<CR>
 imap <D-w> <Esc>:bd<CR>
 
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,mam/client/*,mam/client_daemon/*,mam/updater/*,mam/ios/*,mam/windows/*
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,mam/client/*,mam/client_daemon/*,mam/updater/*,mam/ios/*,mam/windows/*,mam/nuke-mac/*
 
 " let g:CommandTAcceptSelectionMap = '<C-t>'
 " let g:CommandTAcceptSelectionTabMap = '<CR>'
@@ -22,3 +22,8 @@ let delimitMate_matchpairs = "(:),[:],{:},<:>"
 
 " Map Leader-C to copy the current file to the clipboard
 map <Leader>C :!cat % \| pbcopy<CR>
+
+" PeepOpen
+macmenu &File.New\ Tab key=<D-T>
+map <D-t> :PeepOpen<CR>
+imap <D-t> <Esc>:PeepOpen<CR>

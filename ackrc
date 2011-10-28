@@ -2,6 +2,8 @@
 --ignore-dirs=mam/client
 --ignore-dirs=mam/client_daemon
 --ignore-dirs=mam/updater
+--ignore-dirs=mam/nuke-mac
 --ignore-dirs=client
 --ignore-dirs=client_daemon
 --ignore-dirs=updater
+--ignore-dirs=nuke-mac
