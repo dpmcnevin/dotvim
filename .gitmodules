@@ -115,3 +115,9 @@
 [submodule "bundle/changesPlugin"]
 	path = bundle/changesPlugin
 	url = https://github.com/chrisbra/changesPlugin.git
+[submodule "bundle/vim-rvm"]
+	path = bundle/vim-rvm
+	url = https://github.com/tpope/vim-rvm.git
+[submodule "bundle/twilight256.vim"]
+	path = bundle/twilight256.vim
+	url = https://github.com/vim-scripts/twilight256.vim.git
