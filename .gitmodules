@@ -109,9 +109,6 @@
 [submodule "bundle/yaml.vim"]
 	path = bundle/yaml.vim
 	url = https://github.com/vim-scripts/yaml.vim.git
-[submodule "bundle/vim-snipmate-ruby-snippets"]
-	path = bundle/vim-snipmate-ruby-snippets
-	url = git://github.com/dpmcnevin/vim-snipmate-ruby-snippets.git
 [submodule "bundle/changesPlugin"]
 	path = bundle/changesPlugin
 	url = https://github.com/chrisbra/changesPlugin.git
