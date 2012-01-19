@@ -13,3 +13,7 @@ map <Leader>gd :Gdiff<CR>
 map <Leader>gl :Glog<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gp :Git push<CR>
+
+" Surround
+let g:surround_45 = "<% \r %>"
+let g:surround_61 = "<%= \r %>"
