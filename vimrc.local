@@ -19,4 +19,4 @@ let g:surround_45 = "<% \r %>"
 let g:surround_61 = "<%= \r %>"
 
 " Insert API doc template
-map <Leader>a :read ~/.vim/apidoc.txt
+map <Leader>a :read ~/.vim/apidoc.txt<CR>
