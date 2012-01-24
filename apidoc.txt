@@ -3,8 +3,7 @@
 [TITLE]
 
 == Required Headers
-x-mam-client-version
-x-mam-clent-key
+None
 
 == Required Parameters
 None
