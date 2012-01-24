@@ -1,0 +1,24 @@
+=begin
+@api public
+[TITLE]
+
+== Required Headers
+x-mam-client-version
+x-mam-clent-key
+
+== Required Parameters
+None
+
+== Optional Parameters
+None
+
+== JSON API
+
+=== GET URI
+
+200
+  {
+    ...
+  } 
+
+=end
