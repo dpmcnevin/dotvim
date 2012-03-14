@@ -20,3 +20,6 @@ let g:surround_61 = "<%= \r %>"
 
 " Insert API doc template
 map <Leader>a :read ~/.vim/apidoc.txt<CR>
+
+" Format JSON
+map <Leader>j !perl -MJSON -ne '$t.=$_;END{$j=JSON->new->pretty(1)->utf8(1);print $j->encode($j->decode($t))}'<CR>

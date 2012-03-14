@@ -7,3 +7,7 @@
 --ignore-dirs=client_daemon
 --ignore-dirs=updater
 --ignore-dirs=nuke-mac
+--type-add
+html=.haml
+--type-add
+css=.sass,.scss
