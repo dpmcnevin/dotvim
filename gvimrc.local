@@ -2,6 +2,7 @@ set hidden
 
 color twilight
 set guifont=Monaco:h12
+" set guifont=DroidSansMonoDotted-Powerline:h12
 let g:NERDTreeWinPos = "right"
 
 " Set cmd-w to delete the buffer rahter than close the window
