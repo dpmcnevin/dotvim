@@ -1,7 +1,7 @@
 set hidden
 
 color twilight
-set guifont=Monaco:h12
+set guifont=Monaco\ for\ Powerline:h13
 let g:NERDTreeWinPos = "right"
 
 " Set cmd-w to delete the buffer rahter than close the window
@@ -28,17 +28,4 @@ macmenu &File.New\ Tab key=<D-T>
 map <D-t> :PeepOpen<CR>
 imap <D-t> <Esc>:PeepOpen<CR>
 
-"define 3 custom highlight groups
-" hi User1 ctermbg=green ctermfg=red   guibg=green guifg=red
-" hi User2 ctermbg=red   ctermfg=blue  guibg=red   guifg=blue
-" hi User3 ctermbg=blue  ctermfg=green guibg=blue  guifg=green
-" 
-" set statusline=
-" set statusline+=%1*  "switch to User1 highlight
-" set statusline+=%F   "full filename
-" set statusline+=%2*  "switch to User2 highlight
-" set statusline+=%y   "filetype
-" set statusline+=%3*  "switch to User3 highlight
-" set statusline+=%l   "line number
-" set statusline+=%*   "switch back to statusline highlight
-" set statusline+=%P   "percentage thru file
+:NERDTreeClose
