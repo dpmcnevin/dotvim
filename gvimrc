@@ -13,6 +13,9 @@ if has("gui_macvim")
   " Command-Shift-F for Ack
   map <D-F> :Ack<space>
 
+  " Command-Shift-F for Ag
+  " map <D-F> :Ag<space>
+
   " Command-e for ConqueTerm
   map <D-e> :call StartTerm()<CR>
 

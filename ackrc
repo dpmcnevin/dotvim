@@ -8,6 +8,7 @@
 --ignore-dirs=client_daemon
 --ignore-dirs=updater
 --ignore-dirs=nuke-mac
+--ignore-dirs=public/assets
 --type-add
 html=.haml
 --type-add

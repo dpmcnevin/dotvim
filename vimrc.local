@@ -26,6 +26,10 @@ map <Leader>j !perl -MJSON -ne '$t.=$_;END{$j=JSON->new->pretty(1)->utf8(1);prin
 
 " Ruby 1.9.3 hash format
 map <Leader>rh :%s/:\(\w*\)\s*=>\s*/\1: /g
+map <Leader>ra :Tab/\w:\zs/r0l1l0<CR>
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
+
+" Clear highlighting
+map <Leader>h :noh<CR>
