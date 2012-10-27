@@ -33,3 +33,6 @@ let g:Powerline_symbols = 'fancy'
 
 " Clear highlighting
 map <Leader>h :noh<CR>
+
+" Folding
+map <Leader>f ^zf%
