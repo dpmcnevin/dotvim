@@ -35,4 +35,11 @@ let g:Powerline_symbols = 'fancy'
 map <Leader>h :noh<CR>
 
 " Folding
-map <Leader>f ^zf%
+" map <Leader>f ^zf%
+
+" Focus test
+map <Leader>f :s/\s*do\s*$/, :focus do<CR><Leader>h
+map <Leader>F :s/\s*,\s*:focus\s*do\s*$/ do/<CR><Leader>h
+
+" Use Silver Searcher
+" let g:ackprg = 'ag --nogroup --nocolor --column'
