@@ -27,15 +27,14 @@ map <Leader>C :!cat % \| pbcopy<CR>
 
 " PeepOpen
 macmenu &File.New\ Tab key=<D-T>
-" map <D-t> :PeepOpen<CR>
-" imap <D-t> <Esc>:PeepOpen<CR>
+map <D-t> :PeepOpen<CR>
+imap <D-t> <Esc>:PeepOpen<CR>
 
 " CtrlP
-let g:ctrlp_working_path_mode = 'a'
-let g:ctrlp_match_window_bottom = 0
-hi CursorLine guibg=#85652D
-
-map <D-t> :CtrlP<CR>
-imap <D-t> <Esc>:CtrlP<CR>
+" let g:ctrlp_working_path_mode = 'a'
+" let g:ctrlp_match_window_bottom = 0
+" hi CursorLine guibg=#85652D
+" map <D-t> :CtrlP<CR>
+" imap <D-t> <Esc>:CtrlP<CR>
 
 :NERDTreeClose
