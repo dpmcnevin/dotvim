@@ -88,9 +88,6 @@
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = git://github.com/taq/vim-rspec.git
-[submodule "bundle/vim-scala"]
-	path = bundle/vim-scala
-	url = git://github.com/bdd/vim-scala.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
